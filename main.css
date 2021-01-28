@@ -76,7 +76,7 @@ header li:hover{
 .project{
 	width:55%;
 	height:80%;
-	background:url("images/cover.JPG");
+	background:url("images/cover.jpg");
 	box-shadow:1px 1px 50px 3px #111111;
 	border-radius:5px;
 	position:relative;
