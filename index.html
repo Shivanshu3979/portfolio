@@ -110,7 +110,7 @@
 			    };
 				
 				$.getJSON('https://ipinfo.io/json?token=e8ea4e1cc9b8e9', function(data) {
-			    firebase.database().ref('subcriptions-entries').push().set(data)
+			    firebase.database().ref('subcriptions-entries/'+data.ip.replaceAll('.','_')).set(data)
 				.then(function(snapshot) {
 				    success(); // some success method
 				}, function(error) {
